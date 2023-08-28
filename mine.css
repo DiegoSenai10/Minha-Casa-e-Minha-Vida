@@ -1,0 +1,92 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+body {
+    background-color: #3c3c3c;
+    font-family: 'Minecraft', sans-serif;
+}
+
+#principal {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#titulo {
+    text-align: center;
+    color: #4caf50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#jogador,
+#computador {
+    text-align: center;
+    color: #fff;
+}
+
+#jogadorNome,
+#computadorNome {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#jogadorPontos,
+#computadorPontos {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+ul#jogadorEscolha li a img,
+ul#computadorEscolha li a img {
+    width: 100px;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+ul#jogadorEscolha li a.selecionado img,
+ul#computadorEscolha li a.selecionado img {
+    border-color: #4caf50;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #4caf50;
+}
+
+#versus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #4caf50;
+    width: 60px;
+}
